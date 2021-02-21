@@ -74,6 +74,7 @@ OSStatus GeneratePreviewForURL(void *thisInterface, QLPreviewRequestRef preview,
 		
 		ApplyTemplateArgs(html, @{
 								  @"LocalizedName": [apk localizedName],
+								  @"Name": [apk Name],
 								  @"PackageID": [apk packageName],
 								  @"VersionName": [apk versionName],
 								  @"VersionCode": [apk versionCode],
@@ -93,6 +94,7 @@ OSStatus GeneratePreviewForURL(void *thisInterface, QLPreviewRequestRef preview,
 								  
 								  @"L_PackageID": NSLocalizedStringFromTableInBundle(@"Package ID", nil, bundle, nil),
 								  @"L_Version": NSLocalizedStringFromTableInBundle(@"Version", nil, bundle, nil),
+								  @"L_Build": NSLocalizedStringFromTableInBundle(@"Build", nil, bundle, nil),
 								  @"L_Size": NSLocalizedStringFromTableInBundle(@"Size", nil, bundle, nil),
 								  @"L_LastMod": NSLocalizedStringFromTableInBundle(@"Last modified", nil, bundle, nil),
 								  @"L_OpenInGooglePlay": NSLocalizedStringFromTableInBundle(@"Open in Google Play", nil, bundle, nil),
