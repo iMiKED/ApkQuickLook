@@ -37,3 +37,6 @@
 /* No comment provided by engineer. */
 "Version" = "Версия";
 
+/* No comment provided by engineer. */
+"Build" = "Номер сборки";
+
